@@ -24,6 +24,9 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   constructor(private authService: AuthenticationService) {}
 
+/**
+* Initializer: Checks if we are already logged in and redirects if needed.
+*/
   ngOnInit() {
     const c_accessToken = localStorage.getItem(AuthenticationService.OCEANIDS_ACCESS_TOKEN);
 
