@@ -77,7 +77,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   /** Perform login.*/
   login() {
-    this.authService.login('USER_ID', 'SECRET_PASSWORD')
+    this.authService.login('stephen.fraser@sams.ac.uk', 'sK3Lp7T5n')
       .subscribe(
         auth => {
           console.log('Login successfull...');
